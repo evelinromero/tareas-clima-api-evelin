@@ -59,4 +59,8 @@ app.get('/api/salud', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+const tareasRouter = require('./routes/tareas');
+
+app.use('/api/tareas', tareasRouter);
+
 module.exports = app;
